@@ -978,7 +978,7 @@
 		line-height: 1.3;
 	}
 
-/*----------------------------------------MEDIA-TABLET-TRENDS----------------------------------------*/
+	/*----------------------------------------MEDIA-TABLET-TRENDS----------------------------------------*/
 
 	.trends {
 		margin: 45px auto;
@@ -1014,7 +1014,7 @@
 		font-size: 17px;
 	}
 
-/*----------------------------------------MEDIA-TABLET-CONTAINER----------------------------------------*/
+	/*----------------------------------------MEDIA-TABLET-CONTAINER----------------------------------------*/
 
 	.container {
 		max-width: 1199px;
@@ -1022,7 +1022,7 @@
 		padding: 0 35px;
 	}
 
-/*----------------------------------------MEDIA-TABLET-MAIN----------------------------------------*/
+	/*----------------------------------------MEDIA-TABLET-MAIN----------------------------------------*/
 
 	.articles {
 		width: 50.6%;
@@ -1081,13 +1081,13 @@
 		margin-top: 15px;
 	}
 
-/*----------------------------------------MEDIA-TABLET-ASIDE----------------------------------------*/
+	/*----------------------------------------MEDIA-TABLET-ASIDE----------------------------------------*/
 
 	.aside {
 		margin-left: 35px;
 	}
 
-/*----------------------------------------MEDIA-TABLET-PRODUCTS----------------------------------------*/
+	/*----------------------------------------MEDIA-TABLET-PRODUCTS----------------------------------------*/
 
 	.products {
 		max-width: 1199px;
@@ -1111,7 +1111,7 @@
 		font-size: 17px;
 	}
 
-/*----------------------------------------MEDIA-TABLET-FOOTER----------------------------------------*/
+	/*----------------------------------------MEDIA-TABLET-FOOTER----------------------------------------*/
 
 	.footer {
 		max-width: 1199px;
@@ -1122,7 +1122,7 @@
 		margin: 50px auto 40px;
 	}
 
-/*----------------------------------------MEDIA-TABLET-POPUP----------------------------------------*/
+	/*----------------------------------------MEDIA-TABLET-POPUP----------------------------------------*/
 
 	.popup-close {
 		top: -2em;
@@ -1146,6 +1146,69 @@
 /*----------------------------------------MEDIA-TABLET-LANDSCAPE----------------------------------------*/
 
 @media screen and (min-width: 1025px) and (orientation: landscape) {
+	.header {
+		padding: 43px 0 0;
+		background-image: url(../images/banner-bg-tablet.jpg);
+	}
+
+	.header-container {
+		display: flex;
+		flex-direction: row-reverse;
+		max-width: 1199px;
+		padding: 0 35px;
+	}
+
+	.burger-menu {
+		position: relative;
+		display: block;
+		width: 23px;
+		height: 21px;
+	}
+
+	.burger {
+		position: absolute;
+		top: 9px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #ffffff;
+	}
+
+	.burger-menu::before,
+	.burger-menu::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #ffffff;
+	}
+
+	.burger-menu::before {
+		top: 0;
+	}
+
+	.burger-menu::after {
+		bottom: 0;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.logo-img {
+		width: 158px;
+	}
+
+	.header-title {
+		max-width: 620px;
+		padding: 90px 0 110px;
+		font-size: 40px;
+		line-height: 1.3;
+	}
+
+	/*----------------------------------------MEDIA-TABLET-TRENDS-LANDSCAPE----------------------------------------*/
+
 	.trends-container {
 		flex-wrap: nowrap;
 	}
@@ -1157,11 +1220,139 @@
 	.trends-article:nth-child(n+3) {
 		margin-top: 0;
 	}
+
+	/*----------------------------------------MEDIA-TABLET-CONTAINER-LANDSCAPE----------------------------------------*/
+
+	.container {
+		max-width: 1199px;
+		margin: 50px auto;
+		padding: 0 35px;
+	}
+
+	/*----------------------------------------MEDIA-TABLET-MAIN-LANDSCAPE----------------------------------------*/
+
+	.articles {
+		width: 50.6%;
+	}
+
+	.article {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.article:nth-child(n + 2) {
+		margin-top: 0px;
+	}
+
+	.article:nth-child(n+2)::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 3px;
+		margin-bottom: 40px;
+		margin-top: 20px;
+		background-color: #eeeeee;
+	}
+
+	.article-img {
+		width: 100%;
+	}
+
+	.article-image {
+		width: 100%;
+	}
+
+	.article-description {
+		display: flex;
+		flex-direction: column;
+		margin-left: 0px;
+	}
+
+	.article-tags-list {
+		margin-top: 14px;
+	}
+
+	.article-title {
+		margin-top: 7px;
+	}
+
+	.article-title-link {
+		font-size: 17px;
+	}
+
+	.article-text {
+		margin-top: 25px;
+	}
+
+	.article-text-paragraph:nth-child(n + 2) {
+		margin-top: 15px;
+	}
+
+	/*----------------------------------------MEDIA-TABLET-ASIDE LANDSCAPE----------------------------------------*/
+
+	.aside {
+		margin-left: 35px;
+	}
+
+	/*----------------------------------------MEDIA-TABLET-PRODUCTS-LANDSCAPE----------------------------------------*/
+
+	.products {
+		max-width: 1199px;
+		margin: 50px auto;
+		padding: 0 35px;
+	}
+
+	.cards {
+		flex-wrap: wrap;
+	}
+
+	.card {
+		width: calc((100% - 22px)/2);
+	}
+
+	.card:nth-child(n+3) {
+		margin-top: 28px;
+	}
+
+	.card-title {
+		font-size: 17px;
+	}
+
+	/*----------------------------------------MEDIA-TABLET-FOOTER-LANDSCAPE---------------------------------------*/
+
+	.footer {
+		max-width: 1199px;
+		padding: 0 35px;
+	}
+
+	.copyright {
+		margin: 50px auto 40px;
+	}
+
+	/*----------------------------------------MEDIA-TABLET-POPUP-LANDSCAPE----------------------------------------*/
+
+	.popup-close {
+		top: -2em;
+		width: 1.4em;
+		height: 1.4em;
+		font-size: 18px;
+	}
+
+	.radio-group-right {
+		margin-left: 35px;
+	}
+
+	.radio-group-text::before {
+		width: 26px;
+		height: 26px;
+		vertical-align: middle;
+		background-size: 26px;
+	}
 }
 
-/*----------------------------------------MEDIA-MOBILE----------------------------------------*/
+/*----------------------------------------MEDIA-MOBILE-PORTRAIT----------------------------------------*/
 
-@media (max-width: 640px) {
+@media (max-width: 640px) and (orientation: portrait) {
 	.header {
 		padding: 30px 0 0;
 		background-image: url(../images/banner-mobile.jpg);
@@ -1224,7 +1415,7 @@
 		line-height: 1.4;
 	}
 
-	/*----------------------------------------MEDIA-MOBILE-TRENDS----------------------------------------*/
+	/*----------------------------------------MEDIA-MOBILE-TRENDS-PORTRAIT----------------------------------------*/
 
 	.trends {
 		margin: 40px auto;
@@ -1253,7 +1444,7 @@
 		font-size: 16px;
 	}
 
-/*----------------------------------------MEDIA-MOBILE-CONTAINER----------------------------------------*/
+	/*----------------------------------------MEDIA-MOBILE-CONTAINER-PORTRAIT----------------------------------------*/
 
 	.container {
 		flex-direction: column;
@@ -1262,7 +1453,7 @@
 		margin: 45px auto;
 	}
 
-	/*----------------------------------------MEDIA-MOBILE-MAIN----------------------------------------*/
+	/*----------------------------------------MEDIA-MOBILE-MAIN-PORTRAIT----------------------------------------*/
 
 	.article {
 		flex-direction: column;
@@ -1320,7 +1511,7 @@
 		margin-top: 10px;
 	}
 
-	/*----------------------------------------MEDIA-MOBILE-ASIDE----------------------------------------*/
+	/*----------------------------------------MEDIA-MOBILE-ASIDE-PORTRAIT----------------------------------------*/
 
 	.aside {
 		width: 100%;
@@ -1337,7 +1528,7 @@
 		font-size: 16px;
 	}
 
-	/*----------------------------------------MEDIA-MOBILE-PRODUCTS----------------------------------------*/
+	/*----------------------------------------MEDIA-MOBILE-PRODUCTS-PORTRAIT----------------------------------------*/
 
 	.products {
 		max-width: 640px;
@@ -1363,7 +1554,7 @@
 		font-size: 17px;
 	}
 
-	/*----------------------------------------MEDIA-MOBILE-FOOTER----------------------------------------*/
+	/*----------------------------------------MEDIA-MOBILE-FOOTER-PORTRAIT----------------------------------------*/
 
 	.footer {
 		max-width: 640px;
@@ -1375,12 +1566,16 @@
 		margin: 50px auto;
 	}
 
+	/*----------------------------------------MEDIA-MOBILE-POPUP-PORTRAIT----------------------------------------*/
+	.popup {
+		padding: 55px 15px 35px;
+	}
+
 	.popup-container {
 		width: 330px;
 		padding: 30px 25px;
+		margin: auto;
 	}
-
-	/*----------------------------------------MEDIA-MOBILE-POPUP----------------------------------------*/
 
 	.popup-close {
 		top: -2em;
@@ -1403,13 +1598,246 @@
 
 /*----------------------------------------MEDIA-MOBILE-LANDSCAPE----------------------------------------*/
 
-@media ((min-width: 500px) and (max-width: 1024px)) and (orientation: landscape) {
+@media (min-width: 480px) and (max-width: 1024px) and (orientation: landscape) {
+	.header {
+		padding: 30px 0 0;
+		background-image: url(../images/banner-mobile.jpg);
+	}
+
+	.header-container {
+		flex-direction: column;
+		max-width: 640px;
+	}
+
+	.burger-menu {
+		position: relative;
+		display: block;
+		width: 23px;
+		height: 21px;
+		margin-left: auto;
+		margin-right: 0;
+		margin-bottom: 170px;
+	}
+
+	.burger {
+		position: absolute;
+		top: 9px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #ffffff;
+	}
+
+	.burger-menu::before,
+	.burger-menu::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #ffffff;
+	}
+
+	.burger-menu::before {
+		top: 0;
+	}
+
+	.burger-menu::after {
+		bottom: 0;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.logo-img {
+		width: 270px;
+	}
+
+	.header-title {
+		max-width: 290px;
+		padding: 40px 0 215px;
+		font-size: 26px;
+		line-height: 1.4;
+	}
+
+	/*----------------------------------------MEDIA-MOBILE-TRENDS-LANDSCAPE----------------------------------------*/
+
 	.trends-container {
 		flex-wrap: wrap;
 	}
 
 	.trends-article {
-		height: 250px;
+		height: 230px;
 		width: calc(50% - 3px);
+		margin-bottom: 5px;
+		padding: 0 15px 15px;
+	}
+
+	.trends {
+		margin: 40px auto;
+	}
+
+	.content-header {
+		font-size: 16px;
+	}
+
+	.trends-text {
+		padding: 25px;
+	}
+
+	.trend-title-link {
+		font-size: 16px;
+	}
+
+	/*----------------------------------------MEDIA-MOBILE-CONTAINER-LANDSCAPE----------------------------------------*/
+
+	.container {
+		flex-direction: column;
+		flex-wrap: wrap;
+		max-width: 640px;
+		margin: 45px auto;
+	}
+
+	/*----------------------------------------MEDIA-MOBILE-MAIN-LANDSCAPE----------------------------------------*/
+
+	.article {
+		flex-direction: column;
+	}
+
+	.article::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 3px;
+		margin-bottom: 35px;
+		margin-top: 20px;
+		background-color: #eeeeee;
+	}
+
+	.article:nth-child(n + 2) {
+		margin-top: 0;
+	}
+
+	.article-img {
+		display: flex;
+		width: 100%;
+	}
+
+	.article-image {
+		width: 100%;
+	}
+
+	.article-description {
+		margin-left: 0px;
+	}
+
+	.article-tags-list {
+		margin-top: 14px;
+	}
+
+	.article-title {
+		margin-top: 15px;
+	}
+
+	.article-title-link {
+		font-size: 16px;
+	}
+
+	.article-date-author {
+		margin-top: 25px;
+	}
+
+	.article-text {
+		margin-top: 20px;
+		font-size: 14px;
+	}
+
+	.article-text-paragraph:nth-child(n + 2) {
+		margin-top: 10px;
+	}
+
+	/*----------------------------------------MEDIA-MOBILE-ASIDE-LANDSCAPE----------------------------------------*/
+
+	.aside {
+		width: 100%;
+		max-width: 640px;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+	.sidebar {
+		margin-bottom: 45px;
+	}
+
+	.sidebar-header {
+		font-size: 16px;
+	}
+
+	/*----------------------------------------MEDIA-MOBILE-PRODUCTS-LANDSCAPE----------------------------------------*/
+
+	.products {
+		max-width: 640px;
+		margin: 45px auto;
+	}
+
+	.cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.card {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	.card:last-child() {
+		margin-bottom: 0;
+	}
+
+	.card-title {
+		font-size: 17px;
+	}
+
+	/*----------------------------------------MEDIA-MOBILE-FOOTER-LANDSCAPE----------------------------------------*/
+
+	.footer {
+		max-width: 640px;
+		margin: 0 auto;
+		padding: 0 15px 40px;
+	}
+
+	.copyright {
+		margin: 50px auto;
+	}
+
+	/*----------------------------------------MEDIA-MOBILE-POPUP-LANDSCAPE----------------------------------------*/
+	.popup {
+		padding: 55px 15px 35px;
+	}
+
+	.popup-container {
+		width: 330px;
+		padding: 30px 25px;
+		margin: auto;
+	}
+
+	.popup-close {
+		top: -2em;
+		width: 1.4em;
+		height: 1.4em;
+		font-size: 18px;
+	}
+
+	.radio-group-right {
+		margin-left: 35px;
+	}
+
+	.radio-group-text::before {
+		width: 26px;
+		height: 26px;
+		vertical-align: middle;
+		background-size: 26px;
 	}
 }
