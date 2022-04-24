@@ -916,7 +916,7 @@
 
 /*----------------------------------------MEDIA-TABLET----------------------------------------*/
 
-@media (min-width: 641px) and (max-width: 1200px) {
+@media (min-width: 641px) and (max-width: 1199px) {
 	.header {
 		padding: 43px 0 0;
 		background-image: url(../images/banner-bg-tablet.jpg);
@@ -1145,7 +1145,7 @@
 
 /*----------------------------------------MEDIA-TABLET-LANDSCAPE----------------------------------------*/
 
-@media screen and (min-width: 1025px) and (orientation: landscape) {
+@media screen and (min-width: 1025px) and (max-width: 1199px) and (orientation: landscape) {
 	.header {
 		padding: 43px 0 0;
 		background-image: url(../images/banner-bg-tablet.jpg);
